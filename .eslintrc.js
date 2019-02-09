@@ -3,7 +3,7 @@ module.exports = {
   env: {
     browser: true,
     node: false,
-    'jest/globals': false
+    jest: false
   },
   plugins: [
     '@typescript-eslint',

@@ -1,0 +1,46 @@
+{
+  "editor.formatOnSave": true,
+  // For Stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // For ESLint
+  "html.format.enable": false,
+  "json.format.enable": false,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": false,
+  "prettier.eslintIntegration": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "typescript",
+    "javascript",
+    "javascriptreact",
+    { "language": "vue", "autoFix": true }
+  ],
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.defaultFormatter.ts": "none",
+  "vetur.format.defaultFormatter.css": "none",
+  "vetur.format.defaultFormatter.less": "none",
+  "vetur.format.defaultFormatter.postcss": "none",
+  "vetur.format.defaultFormatter.scss": "none",
+  "vetur.format.defaultFormatter.stylus": "none",
+  "vetur.validation.script": false,
+  "vetur.validation.template": false,
+  "vetur.validation.style": false,
+  // Utilities
+  "vetur.completion.useScaffoldSnippets": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  },
+  "jest.autoEnable": false,
+  "jest.enableCodeLens": false,
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  },
+  "eslint.provideLintTask": true
+}

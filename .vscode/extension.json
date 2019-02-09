@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "dariofuzinato.vue-peek",
+    "DavidAnson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "octref.vetur",
+    "Orta.vscode-jest",
+    "shinnn.stylelint"
+  ]
+}

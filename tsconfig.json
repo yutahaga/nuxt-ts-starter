@@ -1,0 +1,20 @@
+{
+  "extends": "@nuxt/typescript",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": [
+      "@types/jest",
+      "@types/node",
+      "@types/webpack",
+      "@nuxt/vue-app"
+    ],
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+}

@@ -1,6 +1,7 @@
+/* eslint-disable-next-line @typescript-eslint/no-var-requires */
 import { Http2ServerResponse } from 'http2'
 import { Context } from '@nuxt/vue-app'
-/* eslint-disable-next-line @typescript-eslint/no-var-requires */
+const pkg = require('./package')
 const tailwindConfig = require('./tailwind.js')
 
 class TailwindExtractor {
@@ -88,6 +89,14 @@ export default {
    * Build configuration
    */
   build: {
+    babel: {
+      presets({ isServer }: Context) {
+        const targets = isServer
+          ? { node: '10' }
+          : { browsers: pkg.browserslist }
+        return [[require.resolve('@nuxt/babel-preset-app'), { targets }]]
+      }
+    },
     extractCSS: process.env.NODE_ENV === 'production',
     postcss: {
       order: [
@@ -154,3 +163,4 @@ export default {
     ]
   }
 }
+/* eslint-enable-next-line @typescript-eslint/no-var-requires */
